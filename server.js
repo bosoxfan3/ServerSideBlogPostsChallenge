@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const app = express();
 const router = require('./router');
 
-app.use(morgan('common'));
+app.use(morgan('dev'));
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
